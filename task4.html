@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Job Application form 
+        </title>
+        <style>
+            *
+        {
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+        }
+
+        body
+        {
+          background:linear-gradient(to right, #ffecd2, #2b8981);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+        }
+        
+        .form-container
+{
+    background-color: #ffffffcc;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+input[type="date"],
+select,
+textarea {
+  padding: 0.6rem;
+  border: 2px solid #db2f1f;
+  border-radius: 8px;
+  background-color: #fff8f0;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #ff3e3e;
+  outline: none;
+}
+
+/* Submit button */
+button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff3e3e;
+}
+
+
+
+
+
+
+            h1
+            {
+                color: rgb(26, 45, 210);
+                padding: 30px;
+                text-align: center;
+                font-size: xx-large;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            
+            
+           
+        </style>
+
+
+
+
+
+
+    </head>
+    <body>
+   <div class="form-container">
+    <h1> JOB APPLICATION FORM</h1>
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+        <label for="gender">Gender:</label>
+        <div class="gender-options">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+            
+            <label for="dob">Date of Birth:</label><br>
+             <input type="date" id="dob" name="dob"  required><br><br>
+             <label for="course"> Course:</label><br>
+             <select id="course" name="course" required>
+                <option value="">----select option----</option>
+                <option value="html">HTML</option>
+                <option value="js">Javascript</option>
+                <option value="css">CSS</option>
+                <option value="php">php</option>
+             </select><br><br>
+
+             <label for="qualification">Educational Qualification:</label><br>
+             <select id="qualification" name="qualification" required>
+                <option value="">----select option----</option>
+                <option value="msc">M.sc</option>
+                <option value="degree">Degree</option>
+                <option value="other">Other</option>
+             </select><br>
+             <br>
+             <label for="university name">University Name:</label><br>
+             <select id="university" name="university" required>
+                <option value="">----select option----</option>
+                <option value="university">Thiruvalluvar University</option>
+                <option value="university">Madras University</option>
+                <option value="university">Alagappa University</option>
+             </select><br><br>
+             <label for="resume">Upload resume:</label><br>
+             <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br><br>
+             <label for="address">Parmanent Address:</label><br>
+             <textarea id="address" name="address" rows="7" cols="60"></textarea><br><br>
+             <input type="checkbox" id="checkbox" name="checkbox" required>
+             <label for="agree">I confirm that the above information is accurate and I agree to continue.</label><br><br>
+             <input type="submit" value="SUBMIT">
+
+
+
+        </div>
+    </form>
+    
+
+
+</html>

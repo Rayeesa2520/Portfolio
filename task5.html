@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Horizontal Student ID Card</title>
+  <style>
+    /* CSS Type: Internal Stylesheet */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffecd2, #e761e0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Box Model + Layout */
+    .id-card {
+      display: flex; /* Layout: Flexbox */
+      flex-direction: row;
+      width: 600px;
+      height: 200px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    /* Left Section: Photo */
+    .photo {
+      flex: 1;
+      background: linear-gradient(to bottom, #43cea2, #185a9d);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .photo img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+    }
+
+    /* Right Section: Info */
+    .details {
+      flex: 2;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* CSS Selectors: Element, Class, Grouping */
+    .school-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #185a9d;
+    }
+
+    .student-name {
+      font-size: 1.5rem;
+      color: #e91e63;
+      margin: 5px 0;
+    }
+
+    .info p {
+      margin: 3px 0;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .footer {
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    /* Inline CSS Example */
+    .highlight {
+      color: #ff5722;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="id-card">
+    <div class="photo">
+      <img src="rayeesa1.jpg" alt="Student Photo">
+    </div>
+    <div class="details">
+      <div class="info">
+        <div class="college-name">🌟VOORHEES COLLEGE</div>
+        <div class="student-name">F.RAYEESA</div>
+        <p><strong>REGISTER NO:</strong> <span class="highlight">32324U18039</span></p>
+        <p><strong>Class:</strong>B.SC.COMPUTER SCIENCE</p>
+        <p><strong>DOB:</strong> 25 JAN 2006</p>
+        <p><strong>Blood Group:</strong>AB+ </p>
+      </div>
+      <div class="footer">
+        📍 Virinchipuram, Vellore, Tamil Nadu &nbsp; | &nbsp; 📞 +8122803724
+      </div>
+    </div>
+  </div>
+</body>
+</html>
